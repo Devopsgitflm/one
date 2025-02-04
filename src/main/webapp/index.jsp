@@ -12,12 +12,17 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
         .container {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 10px;
         }
         .container h2 {
             margin-bottom: 20px;
@@ -47,6 +52,7 @@
 </head>
 <body>
     <div class="container">
+        <h1>Welcome to DevOps Learning Portal</h1>
         <h2>Register</h2>
         <form action="/submit_registration" method="post">
             <label for="username">Username</label>
