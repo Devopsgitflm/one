@@ -1,25 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>MyJavaAPP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-	<h1 style="color: violet; font-size: 40px;" align="center">HEY WE DEPLOYED OUR APP USING JENKINS</h1>
-	<h1 style="color: red; font-size: 40px;" align="center">THIS IS APP DEPLOYMENT USING TOMCAT</h1>
-	<h1 style="color: green; font-size: 40px;" align="center">234567890</h1>
-	<h1 style="color: pink; font-size: 40px;" align="center">WE ARE SUCCESSFULLY DEPLOYED APPLICATION</h1>
-	<h1 style="color: grey; font-size: 40px;" align="center">we are done with ci/cd</h1>
-	<h1 style="color: blue; font-size: 40px;" align="center">we integraded nexus also/cd</h1>
-	<h1 style="color: black; font-size: 40px;" align="center">we are done with nexus also</h1>
-	<h1 style="color: black; font-size: 40px;" align="center">I am  going to face war</h1>
-        <h1 style="color: black; font-size: 40px;" align="center">I am  Devops Engineer</h1>
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    <div class="container">
+        <h2>Register</h2>
+        <form action="/submit_registration" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </body>
 </html>
